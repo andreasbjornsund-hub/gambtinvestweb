@@ -1,0 +1,8 @@
+# Robots.txt for Gambit Invest AS
+# https://gambitinvest.no
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://gambitinvest.no/sitemap.xml

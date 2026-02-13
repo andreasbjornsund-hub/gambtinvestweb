@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambit Invest AS</title>
+    <meta name="description" content="Gambit Invest AS - Andreas Parr Bjørnsund. Contrarian business angel investing in early-stage niche tech companies with Nordic roots.">
+    <link rel="canonical" href="https://gambitinvest.no/">
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gambit Invest AS">
+    <meta property="og:description" content="Andreas Parr Bjørnsund. Contrarian business angel investing in early-stage niche tech companies with Nordic roots.">
+    <meta property="og:url" content="https://gambitinvest.no/">
+    <meta property="og:site_name" content="Gambit Invest AS">
+    <meta property="og:locale" content="en_US">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Organization",
+                "@id": "https://gambitinvest.no/#organization",
+                "name": "Gambit Invest AS",
+                "url": "https://gambitinvest.no",
+                "description": "Andreas Parr Bjørnsund. Contrarian Norwegian business angel focused on early-stage niche tech companies with high gross margin products, international footprint, incentivised teams, and connection to Norway.",
+                "foundingDate": "2019",
+                "foundingLocation": {
+                    "@type": "Place",
+                    "name": "Norway"
+                },
+                "areaServed": {
+                    "@type": "GeoCircle",
+                    "geoMidpoint": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 59.9139,
+                        "longitude": 10.7522
+                    },
+                    "geoRadius": "5000 km"
+                },
+                "knowsAbout": [
+                    "Venture Capital",
+                    "Angel Investing",
+                    "Early Stage Startups",
+                    "Technology Companies",
+                    "Nordic Startups"
+                ],
+                "slogan": "Calculated moves. Contrarian conviction."
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://gambitinvest.no/#website",
+                "url": "https://gambitinvest.no",
+                "name": "Gambit Invest AS",
+                "description": "Andreas Parr Bjørnsund - contrarian business angel investing in early-stage niche tech companies",
+                "publisher": {
+                    "@id": "https://gambitinvest.no/#organization"
+                },
+                "inLanguage": "en"
+            },
+            {
+                "@type": "WebPage",
+                "@id": "https://gambitinvest.no/#webpage",
+                "url": "https://gambitinvest.no",
+                "name": "Gambit Invest AS",
+                "isPartOf": {
+                    "@id": "https://gambitinvest.no/#website"
+                },
+                "about": {
+                    "@id": "https://gambitinvest.no/#organization"
+                },
+                "description": "Andreas Parr Bjørnsund. Contrarian business angel investing in early-stage niche tech companies with Nordic roots.",
+                "inLanguage": "en"
+            },
+            {
+                "@type": "InvestmentOrFund",
+                "@id": "https://gambitinvest.no/#fund",
+                "name": "Gambit Invest AS",
+                "description": "Andreas Parr Bjørnsund's business angel investments in early-stage niche tech companies",
+                "provider": {
+                    "@id": "https://gambitinvest.no/#organization"
+                },
+                "areaServed": "Global",
+                "audience": {
+                    "@type": "BusinessAudience",
+                    "audienceType": "Early-stage technology startups"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Favicon - Chess knight (gambit theme) -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">Gambit Invest</a>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav.about">About</a></li>
+                <li><a href="#thesis" data-i18n="nav.thesis">Thesis</a></li>
+                <li><a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a></li>
+                <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+            </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn active" data-lang="en">EN</button>
+                <button class="lang-btn" data-lang="no">NO</button>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-slideshow">
+            <!-- Images will be injected by JavaScript -->
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Gambit Invest AS</h1>
+            <p class="hero-tagline" data-i18n="hero.tagline"></p>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">Calculated moves. Contrarian conviction.</p>
+            <a href="#about" class="btn btn-primary" data-i18n="hero.cta">Learn More</a>
+        </div>
+        <div class="hero-credit">
+            <span data-i18n="hero.credit.prefix">Photo by</span> <span id="current-photographer"><a href="https://unsplash.com/@tobiaslystad" target="_blank" rel="noopener">Tobias Lystad</a></span> <span data-i18n="hero.credit.suffix">on</span> <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <h2 data-i18n="about.title">About</h2>
+            <div class="about-content">
+                <p class="lead" data-i18n="about.lead">
+                    Andreas Parr Bjørnsund is a Norwegian business angel investing through
+                    Gambit Invest AS, focused on identifying and supporting exceptional early-stage technology companies.
+                </p>
+                <p data-i18n="about.p1">
+                    In chess, a gambit is a calculated sacrifice, giving up material to gain
+                    a stronger position. That same contrarian philosophy drives my
+                    investment approach. I bring more than capital to my portfolio companies:
+                    strategic guidance, industry connections, and operational expertise to help
+                    founders navigate the critical early stages of company building.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investment Thesis Section -->
+    <section id="thesis" class="section thesis">
+        <div class="thesis-bg"></div>
+        <div class="container">
+            <h2 data-i18n="thesis.title">Investment Thesis</h2>
+            <p class="section-intro" data-i18n="thesis.intro">
+                Every strong position requires conviction. I seek contrarian
+                opportunities at the intersection of innovation, scalability, and Nordic values.
+            </p>
+            <div class="thesis-grid">
+                <div class="thesis-card">
+                    <div class="thesis-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="thesis.niche.title">Early Stage Niche Tech</h3>
+                    <p data-i18n="thesis.niche.desc">
+                        I focus on early-stage companies operating in specialized technology
+                        niches where deep expertise creates sustainable competitive advantages.
+                    </p>
+                </div>
+                <div class="thesis-card">
+                    <div class="thesis-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="thesis.margin.title">High Gross Margin Products</h3>
+                    <p data-i18n="thesis.margin.desc">
+                        I prioritize companies with products that demonstrate strong unit economics
+                        and the potential for significant margin expansion at scale.
+                    </p>
+                </div>
+                <div class="thesis-card">
+                    <div class="thesis-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="thesis.intl.title">International Footprint</h3>
+                    <p data-i18n="thesis.intl.desc">
+                        My portfolio companies are built for global markets from day one, with
+                        products and services that transcend geographic boundaries.
+                    </p>
+                </div>
+                <div class="thesis-card">
+                    <div class="thesis-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                            <circle cx="9" cy="7" r="4"/>
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                        </svg>
+                    </div>
+                    <h3 data-i18n="thesis.team.title">Incentivised Team</h3>
+                    <p data-i18n="thesis.team.desc">
+                        I back founders and teams with significant skin in the game, aligned
+                        incentives, and the drive to build enduring companies.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="thesis-credit">
+            <span data-i18n="hero.credit.prefix">Photo by</span> <a href="https://unsplash.com/@johnygoerend" target="_blank" rel="noopener">Johny Goerend</a> <span data-i18n="hero.credit.suffix">on</span> <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio">
+        <div class="container">
+            <h2 data-i18n="portfolio.title">Portfolio</h2>
+            <p class="section-intro" data-i18n="portfolio.intro">
+                My board of companies, each move carefully considered, each position built for the endgame. The closed investments are bankrupt or closed for other reason with -100 % return, that is the name of the game in early stage investments.
+            </p>
+
+            <!-- Portfolio Filters -->
+            <div class="portfolio-filters">
+                <div class="filter-group">
+                    <span class="filter-label" data-i18n="filter.industry">Industry:</span>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="industry" data-value="all" data-i18n="filter.all">All</button>
+                        <button class="filter-btn" data-filter="industry" data-value="software" data-i18n="filter.software">Software/SaaS</button>
+                        <button class="filter-btn" data-filter="industry" data-value="fintech" data-i18n="filter.fintech">Fintech</button>
+                        <button class="filter-btn" data-filter="industry" data-value="medtech" data-i18n="filter.medtech">Medtech</button>
+                        <button class="filter-btn" data-filter="industry" data-value="industrial" data-i18n="filter.industrial">Industrial</button>
+                        <button class="filter-btn" data-filter="industry" data-value="mining" data-i18n="filter.mining">Mining</button>
+                        <button class="filter-btn" data-filter="industry" data-value="defense" data-i18n="filter.defense">Defense</button>
+                        <button class="filter-btn" data-filter="industry" data-value="maritime" data-i18n="filter.maritime">Maritime</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label" data-i18n="filter.status">Status:</span>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="status" data-value="all" data-i18n="filter.all">All</button>
+                        <button class="filter-btn" data-filter="status" data-value="growth" data-i18n="filter.growth">Growth</button>
+                        <button class="filter-btn" data-filter="status" data-value="expansion" data-i18n="filter.expansion">Expansion</button>
+                        <button class="filter-btn" data-filter="status" data-value="exited" data-i18n="filter.exited">Exited</button>
+                        <button class="filter-btn" data-filter="status" data-value="closed" data-i18n="filter.closed">Closed</button>
+                    </div>
+                </div>
+                <div class="filter-group">
+                    <span class="filter-label" data-i18n="filter.country">Country:</span>
+                    <div class="filter-options">
+                        <button class="filter-btn active" data-filter="country" data-value="all" data-i18n="filter.all">All</button>
+                        <button class="filter-btn" data-filter="country" data-value="norway" data-i18n="filter.norway">Norway</button>
+                        <button class="filter-btn" data-filter="country" data-value="sweden" data-i18n="filter.sweden">Sweden</button>
+                        <button class="filter-btn" data-filter="country" data-value="denmark" data-i18n="filter.denmark">Denmark</button>
+                        <button class="filter-btn" data-filter="country" data-value="iceland" data-i18n="filter.iceland">Iceland</button>
+                        <button class="filter-btn" data-filter="country" data-value="canada" data-i18n="filter.canada">Canada</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Stats -->
+            <div class="portfolio-stats" id="portfolio-stats">
+                <div class="stat-item">
+                    <span class="stat-number" id="stat-total">0</span>
+                    <span class="stat-label" data-i18n="stats.total">Total Investments</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="stat-active">0</span>
+                    <span class="stat-label" data-i18n="stats.active">Active</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="stat-exited">0</span>
+                    <span class="stat-label" data-i18n="stats.exited">Exited</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="stat-closed">0</span>
+                    <span class="stat-label" data-i18n="stats.closed">Closed</span>
+                </div>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Flowcase -->
+                <div class="portfolio-card" data-industry="software" data-status="growth" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://www.flowcase.com" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80&auto=format&fit=crop" alt="Flowcase - B2B SaaS platform" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Flowcase</h3>
+                        <p class="portfolio-description" data-i18n="desc.flowcase">
+                            B2B SaaS platform for CV and competence management. VC funded and growing internationally across 35 countries on four continents.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2017
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status growth" data-i18n="status.growth">
+                                Growth
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Xshielder -->
+                <div class="portfolio-card" data-industry="industrial" data-status="growth" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://xshielder.com" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=800&q=80&auto=format&fit=crop" alt="Xshielder - Industrial safety smartphones" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Xshielder</h3>
+                        <p class="portfolio-description" data-i18n="desc.xshielder">
+                            World's lightest and slimmest smartphone for hazardous areas. Safety-certified devices for industrial environments.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2025
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status growth" data-i18n="status.growth">
+                                Growth
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gold Road -->
+                <div class="portfolio-card" data-industry="mining" data-status="growth" data-country="canada">
+                    <div class="portfolio-logo">
+                        <a href="https://www.goldroadusa.com" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82?w=800&q=80&auto=format&fit=crop" alt="Gold Road - Gold mining operations" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Gold Road</h3>
+                        <p class="portfolio-description" data-i18n="desc.goldroad">
+                            Canadian mining company restarting the Gold Road underground gold mine in Arizona. 500-tonne-per-day processing plant with 214,000 oz reserves.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2025
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.canada">Canada</span>
+                            </span>
+                            <span class="meta-item status growth" data-i18n="status.growth">
+                                Growth
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIRI -->
+                <div class="portfolio-card" data-industry="fintech" data-status="growth" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://www.firi.no" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800&q=80&auto=format&fit=crop" alt="FIRI - Cryptocurrency exchange" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>FIRI</h3>
+                        <p class="portfolio-description" data-i18n="desc.firi">
+                            The Nordic region's largest cryptocurrency exchange. Regulated fintech platform enabling secure digital asset trading.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2024
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status growth" data-i18n="status.growth">
+                                Growth
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hawk Infinity -->
+                <div class="portfolio-card" data-industry="software" data-status="growth" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://hawkinfinity.com" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80&auto=format&fit=crop" alt="Hawk Infinity - SaaS portfolio" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Hawk Infinity</h3>
+                        <p class="portfolio-description" data-i18n="desc.hawkinfinity">
+                            Compounder owning multiple profitable SaaS businesses. Building a portfolio of high-quality software companies.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2024
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status growth" data-i18n="status.growth">
+                                Growth
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobai -->
+                <div class="portfolio-card" data-industry="software" data-status="growth" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://www.mobai.bio" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1555952517-2e8e729e0b44?w=800&q=80&auto=format&fit=crop" alt="Mobai - Biometric authentication" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Mobai</h3>
+                        <p class="portfolio-description" data-i18n="desc.mobai">
+                            Biometric authentication and remote identification SaaS. Providing secure identity verification solutions for enterprises.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2022
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status growth" data-i18n="status.growth">
+                                Growth
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Orvue Surgical -->
+                <div class="portfolio-card" data-industry="medtech" data-status="expansion" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://orvue.com" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?w=800&q=80&auto=format&fit=crop" alt="Orvue Surgical - Laparoscopic camera" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Orvue Surgical</h3>
+                        <p class="portfolio-description" data-i18n="desc.orvue">
+                            World's first laparoscopic single-use camera. Pivoted from robotic video streaming SaaS to revolutionary medtech.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2019
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status expansion" data-i18n="status.expansion">
+                                Expansion
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Aristeia -->
+                <div class="portfolio-card" data-industry="defense" data-status="expansion" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://www.aristeia.no" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1579912437766-7896df6d3cd3?w=800&q=80&auto=format&fit=crop" alt="Aristeia - Military medical equipment" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Aristeia</h3>
+                        <p class="portfolio-description" data-i18n="desc.aristeia">
+                            Dual-use next generation tourniquet for field use. Patented technology in testing with major military forces worldwide.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2018
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status expansion" data-i18n="status.expansion">
+                                Expansion
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Assitech (Exit) -->
+                <div class="portfolio-card" data-industry="medtech" data-status="exited" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://www.toprostep.com" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80&auto=format&fit=crop" alt="Assitech - Welfare technology" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Assitech</h3>
+                        <p class="portfolio-description" data-i18n="desc.assitech">
+                            Welfare technology solutions. Successfully sold to Topro (Investinor) in 2021.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2018
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status exited" data-i18n="status.exited">
+                                Exited
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mentis Cura -->
+                <div class="portfolio-card" data-industry="medtech" data-status="closed" data-country="iceland">
+                    <div class="portfolio-logo">
+                        <img src="https://images.unsplash.com/photo-1559757175-5700dde675bc?w=800&q=80&auto=format&fit=crop" alt="Mentis Cura - AI healthcare diagnostics" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Mentis Cura</h3>
+                        <p class="portfolio-description" data-i18n="desc.mentiscura">
+                            AI and machine learning for healthcare diagnostics. Right product at the wrong time - pioneering before the AI hype.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2016
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.iceland">Iceland</span>
+                            </span>
+                            <span class="meta-item status closed" data-i18n="status.closed">
+                                Closed
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Independence Gear -->
+                <div class="portfolio-card" data-industry="medtech" data-status="closed" data-country="norway">
+                    <div class="portfolio-logo">
+                        <img src="https://images.unsplash.com/photo-1631815589968-fdb09a223b1e?w=800&q=80&auto=format&fit=crop" alt="Independence Gear - Assistive devices" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Independence Gear</h3>
+                        <p class="portfolio-description" data-i18n="desc.independencegear">
+                            Healthcare assistive devices. Had strong societal impact but faced systemic barriers in patient aid distribution.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2017
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status closed" data-i18n="status.closed">
+                                Closed
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Instrument Champ -->
+                <div class="portfolio-card" data-industry="software" data-status="closed" data-country="sweden">
+                    <div class="portfolio-logo">
+                        <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=800&q=80&auto=format&fit=crop" alt="Instrument Champ - Music education" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Instrument Champ</h3>
+                        <p class="portfolio-description" data-i18n="desc.instrumentchamp">
+                            Music education SaaS platform. Play along with your own instrument on tablet or computer - Guitar Hero meets real instruments.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2015
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.sweden">Sweden</span>
+                            </span>
+                            <span class="meta-item status closed" data-i18n="status.closed">
+                                Closed
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Poption -->
+                <div class="portfolio-card" data-industry="software" data-status="closed" data-country="norway">
+                    <div class="portfolio-logo">
+                        <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80&auto=format&fit=crop" alt="Poption - HR recruiting software" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Koble / Poption</h3>
+                        <p class="portfolio-description" data-i18n="desc.poption">
+                            HR recruiting software. Could not pivot to wider use cases - founders went on to build even greater things.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2018
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status closed" data-i18n="status.closed">
+                                Closed
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Heroic Sports -->
+                <div class="portfolio-card" data-industry="software" data-status="closed" data-country="denmark">
+                    <div class="portfolio-logo">
+                        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=800&q=80&auto=format&fit=crop" alt="Heroic Sports - Esports team" loading="lazy">
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Heroic Sports</h3>
+                        <p class="portfolio-description" data-i18n="desc.heroicsports">
+                            Professional esports team ownership. Strong momentum during Covid era but ultimately mismanaged.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2021
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.denmark">Denmark</span>
+                            </span>
+                            <span class="meta-item status closed" data-i18n="status.closed">
+                                Closed
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h3 class="portfolio-section-title" data-i18n="portfolio.other.title">Other Indirect &amp; Direct Investments</h3>
+
+            <div class="portfolio-grid portfolio-grid-other">
+                <!-- Hilmar Capital -->
+                <div class="portfolio-card" data-industry="fintech" data-status="growth" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://www.hilmarcapital.com" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80&auto=format&fit=crop" alt="Hilmar Capital - Hedge fund" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Hilmar Capital</h3>
+                        <p class="portfolio-description" data-i18n="desc.hilmarcapital">
+                            Industrial equity hedge fund capitalizing on supply-demand imbalances across shipping, mining, oil &amp; gas, chemicals, and semiconductors.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.type">Type:</strong> <span data-i18n="type.fund">Fund</span>
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status growth" data-i18n="status.growth">
+                                Growth
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Smallworld Nordic -->
+                <div class="portfolio-card" data-industry="software" data-status="growth" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://www.smallworldnordic.com" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&q=80&auto=format&fit=crop" alt="Smallworld Nordic - GIS solutions" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Smallworld Nordic</h3>
+                        <p class="portfolio-description" data-i18n="desc.smallworldnordic">
+                            Scandinavia's leading GIS solutions provider for network operators in telecom, utilities, district heating, and infrastructure.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.type">Type:</strong> <span data-i18n="type.indirect">Indirect</span>
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status growth" data-i18n="status.growth">
+                                Growth
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jordplan -->
+                <div class="portfolio-card" data-industry="software" data-status="growth" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://jordplan.no" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&q=80&auto=format&fit=crop" alt="Jordplan - Agricultural management software" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Jordplan</h3>
+                        <p class="portfolio-description" data-i18n="desc.jordplan">
+                            Agricultural management software for farmers. Soil sampling, fertilizer planning, and field management with advisor collaboration.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.type">Type:</strong> <span data-i18n="type.indirect">Indirect</span>
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status growth" data-i18n="status.growth">
+                                Growth
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pixavi -->
+                <div class="portfolio-card" data-industry="industrial" data-status="exited" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://www.pixavi.com" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=800&q=80&auto=format&fit=crop" alt="Pixavi - Safety-certified cameras" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Pixavi</h3>
+                        <p class="portfolio-description" data-i18n="desc.pixavi">
+                            Innovative manufacturer of safety-certified cameras and smartphones for hazardous areas. Sold to German BARTEC in 2014.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2011
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status exited" data-i18n="status.exited">
+                                Exited
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ohdoki -->
+                <div class="portfolio-card" data-industry="medtech" data-status="exited" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://www.ohdoki.com" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80&auto=format&fit=crop" alt="Ohdoki - Medtech wellness" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Ohdoki</h3>
+                        <p class="portfolio-description" data-i18n="desc.ohdoki">
+                            Medtech wellness product. Successfully sold to PE firm in 2024.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2020
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status exited" data-i18n="status.exited">
+                                Exited
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recharge Health -->
+                <div class="portfolio-card" data-industry="medtech" data-status="expansion" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://recharge.health/" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&q=80&auto=format&fit=crop" alt="Recharge Health - Infrared light therapy" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Recharge Health</h3>
+                        <p class="portfolio-description" data-i18n="desc.rechargehealth">
+                            Infrared light technology for pain relief. Expanding and selling globally.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2022
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status expansion" data-i18n="status.expansion">
+                                Expansion
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wavefoil -->
+                <div class="portfolio-card" data-industry="maritime" data-status="closed" data-country="norway">
+                    <div class="portfolio-logo">
+                        <a href="https://wavefoil.com/" target="_blank" rel="noopener">
+                            <img src="https://images.unsplash.com/photo-1559825481-12a05cc00344?w=800&q=80&auto=format&fit=crop" alt="Wavefoil - Maritime wave propulsion" loading="lazy">
+                        </a>
+                    </div>
+                    <div class="portfolio-info">
+                        <h3>Wavefoil</h3>
+                        <p class="portfolio-description" data-i18n="desc.wavefoil">
+                            Retractable bow foils for wave-powered propulsion on ships. Went bankrupt in 2023, now under new ownership.
+                        </p>
+                        <div class="portfolio-meta">
+                            <span class="meta-item">
+                                <strong data-i18n="meta.year">Year:</strong> 2021
+                            </span>
+                            <span class="meta-item">
+                                <strong data-i18n="meta.country">Country:</strong> <span data-i18n="country.norway">Norway</span>
+                            </span>
+                            <span class="meta-item status closed" data-i18n="status.closed">
+                                Closed
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="contact-bg"></div>
+        <div class="container">
+            <h2 data-i18n="contact.title">Contact</h2>
+            <p class="section-intro" data-i18n="contact.intro">
+                Interested in discussing an investment opportunity or talk to any of the portfolio companies? I'd love to hear from you.
+            </p>
+            <div class="contact-details">
+                <div class="contact-person">
+                    <h3 data-i18n="contact.person.title">Contact Person</h3>
+                    <p class="contact-name">Andreas Parr Bjørnsund</p>
+                    <p class="contact-email-link"><a href="mailto:andreas.bjornsund@gmail.com">andreas.bjornsund@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contact-credit">
+            <span data-i18n="hero.credit.prefix">Photo by</span> <a href="https://unsplash.com/@daniilvnoutchkov" target="_blank" rel="noopener">Daniil Vnoutchkov</a> <span data-i18n="hero.credit.suffix">on</span> <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">Gambit Invest AS</span>
+                    <p class="footer-org" data-i18n="footer.org">Org. nr: 911 996 243</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about" data-i18n="nav.about">About</a>
+                    <a href="#thesis" data-i18n="nav.thesis">Thesis</a>
+                    <a href="#portfolio" data-i18n="nav.portfolio">Portfolio</a>
+                    <a href="#contact" data-i18n="nav.contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 Gambit Invest AS.</p>
+                <p class="made-with"><span data-i18n="footer.madewith">Made with</span> <a href="https://claude.ai" target="_blank" rel="noopener">Claude</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/translations.js" defer></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
