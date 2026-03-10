@@ -271,67 +271,8 @@ updatePortfolioStats();
 // ============================================
 // Portfolio Image System
 // ============================================
-// Priority: 1) Local logo in images/logos/ 2) Website screenshot via thum.io 3) Unsplash fallback
-//
-// Local logos: Place {company}.jpg or {company}.png in images/logos/
-// The company key is derived from the card's <h3> text (lowercased, spaces/slashes removed)
-// Add class "logo-contain" to portfolio-logo div for transparent logo display
-
-function initPortfolioImages() {
-    const SOFTWARE_INDUSTRIES = ['software', 'fintech'];
-
-    document.querySelectorAll('.portfolio-card').forEach(card => {
-        const img = card.querySelector('.portfolio-logo img');
-        if (!img) return;
-
-        const nameEl = card.querySelector('.portfolio-info h3');
-        if (!nameEl) return;
-
-        const rawName = nameEl.textContent.trim();
-        const companyKey = rawName.includes('/')
-            ? rawName.split('/').pop().trim().toLowerCase().replace(/\s+/g, '')
-            : rawName.toLowerCase().replace(/\s+/g, '');
-
-        const logoContainer = card.querySelector('.portfolio-logo');
-        const industry = card.dataset.industry || '';
-
-        // Try local logo first (jpg then png)
-        const localJpg = new Image();
-        localJpg.onload = () => {
-            img.src = localJpg.src;
-            logoContainer.classList.add('logo-contain');
-        };
-        localJpg.onerror = () => {
-            const localPng = new Image();
-            localPng.onload = () => {
-                img.src = localPng.src;
-                logoContainer.classList.add('logo-contain');
-            };
-            localPng.onerror = () => {
-                // No local logo — try website screenshot
-                const link = card.querySelector('.portfolio-logo a');
-                if (link && link.href) {
-                    const screenshotUrl = `https://image.thum.io/get/width/1280/crop/800/viewportWidth/1280/${link.href}`;
-                    const screenshotImg = new Image();
-                    screenshotImg.onload = () => {
-                        img.src = screenshotUrl;
-                        if (SOFTWARE_INDUSTRIES.includes(industry)) {
-                            logoContainer.classList.add('screenshot-browser');
-                        } else {
-                            logoContainer.classList.add('screenshot-plain');
-                        }
-                    };
-                    screenshotImg.onerror = () => { /* keep Unsplash fallback */ };
-                    screenshotImg.src = screenshotUrl;
-                }
-            };
-            localPng.src = `images/logos/${companyKey}.png`;
-        };
-        localJpg.src = `images/logos/${companyKey}.jpg`;
-    });
-}
-
-initPortfolioImages();
+// Portfolio images are now static (set directly in HTML).
+// No runtime logo fetching or screenshot scraping needed.
 
 // ============================================
 // Apply saved language on load
